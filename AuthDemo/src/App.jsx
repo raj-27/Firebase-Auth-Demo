@@ -5,7 +5,7 @@ import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signInWithRedi
 import './App.css'
 
 function App() {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState({});
 
 useEffect(() => {
   const unSubscribe=onAuthStateChanged(auth, (currentUser) => {
